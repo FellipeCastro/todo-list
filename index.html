@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--ICONS-->
+    <script src="https://kit.fontawesome.com/108acab114.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <div class="todo-container">
+        <header>
+            <h1>Todo List</h1>
+        </header>
+
+        <form id="todo-form" autocomplete="off">
+            <p>Adicione a sua tarefa: </p>
+            <div class="form-control">
+                <input type="text" name="todo-input" id="todo-input" placeholder="O que você vai fazer?">
+                <button type="submit"><i class="fa-thin fa-plus"></i></button>
+            </div>
+        </form>
+        <form id="edit-form" class="hide" autocomplete="off">
+            <p>Edite sua tarefa: </p>
+            <div class="form-control">
+                <input type="text" name="edit-input" id="edit-input" placeholder="Edite aqui">
+                <button type="submit">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+            </div>
+            <button id="cancel-edit-btn">Cancelar</button>
+        </form>
+
+        <div id="todo-list"></div>
+            
+    </div>
+
+    <!--Javascrpt-->
+    <script src="script.js"></script>
+</body>
+</html>

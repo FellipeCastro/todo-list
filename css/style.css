@@ -1,0 +1,126 @@
+/*Geral*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #023859;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('../img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button {
+    background-color: #f4f4f4;
+    color: #023859;
+    border: 2px solid #023859;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s ease-in-out;
+}
+
+button i {
+    color: #023859;
+    font-weight: bold;
+    pointer-events: none; /*Desativando eventos ao clicar no icone*/
+}
+
+button:hover {
+    background-color: #023859;
+    color: #f4f4f4;
+}
+
+button:hover > i {
+    color: #f4f4f4;
+}
+
+input, select {
+    padding: 0.25rem 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+/*Todo Header*/
+
+.todo-container {
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.todo-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #023859;
+}
+
+/*Todo Form*/
+
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #023859;
+}
+
+#todo-form p, #edit-form p {
+    margin-bottom: .5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: .3rem;
+    width: 100%;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+/*Todo List*/
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #023859;
+    transition: .3s ease-in-out;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: .9rem;
+}
+
+.todo button {
+    margin-left: .4rem;
+}
+
+.done {
+    background-image: linear-gradient(to right, #6B9FBF, transparent);
+}
+
+.done h3 {
+    color: #f4f4f4;
+    text-decoration: line-through;
+    font-style: italic;
+}
